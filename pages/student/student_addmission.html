@@ -349,77 +349,2732 @@
             <section class="content">
                 <div class="container">
                     <form>
-                        <div class="form-row">
-                            <div class="col">
-                                <label for="inputEmail4">First name</label>
-                                <input type="text" class="form-control" placeholder="">
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Applicant Name</label>
+                            <div class="col-sm-10">
+                                <input type="Text" class="form-control" id="inputPassword" required />
                             </div>
-                            <div class="col">
-                                <label for="inputEmail4">Last name</label>
-                                <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Father's Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPassword" />
                             </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">
+                                Mother's Name
+                            </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPassword" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">
+                                Date of Birth*
+                            </label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="inputPassword" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">
+                                Gender *
+                            </label>
+                            <div class="col-sm-10">
+                                <fieldset class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gridRadios"
+                                                    id="gridRadios1" value="option1" checked />
+                                                <label class="form-check-label" for="gridRadios1">
+                                                    Male
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gridRadios"
+                                                    id="gridRadios2" value="option2" />
+                                                <label class="form-check-label" for="gridRadios2">
+                                                    Female
+                                                </label>
+                                            </div>
+                                            <div class="form-check disabled">
+                                                <input class="form-check-input" type="radio" name="gridRadios"
+                                                    id="gridRadios3" value="option3" />
+                                                <label class="form-check-label" for="gridRadios3">
+                                                    Others
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">
+                                Nationality *
+                            </label>
+                            <div class="col-sm-10">
+                                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                    <option value="-1">Select one</option>
+                                    <option value="-1">Bangladeshi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">
+                                Passport No
+                            </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">
+                                Birth Registration No
+                            </label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">
+                                Freedom Fighter Status *
+                            </label>
+                            <div class="col-sm-10">
+                                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                    <option value="-1">Select one</option>
+                                    <option value="Freedom Fighter">Freedom Fighter</option>
+                                    <option value="Child of Freedom Fighter">Child of Freedom Fighter</option>
+                                    <option value="Grand Child of Freedom Fighter">Grand Child of Freedom Fighter
+                                    </option>
+                                    <option value="Non Freedom Fighter">Non Freedom Fighter</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">
+                                Marital Status *
+                            </label>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                        value="option2" />
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Female
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                        value="option2" />
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- start -->
+
+                        <div class="row">
+                            <div id="presentAddress" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 subDiv">
+                                <div class="row divHeader"><label>Mailing/present address *</label></div>
+                                <div class="row m5">
+                                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <label>Care of <span class="relative"><span
+                                                    class="required-star">*</span></span></label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                        <input class="form-control input-style" type="text" value=""
+                                            name="careOfPresent">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="row m5">
+                                    <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <label>Village/Town/Road/House/Flat <span class="relative"><span
+                                                    class="required-star">*</span></span></label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                        <textarea class="form-control input-style" name="villageTownPresent"></textarea>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="row m5">
+                                    <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <label>District <span class="relative"><span
+                                                    class="required-star">*</span></span></label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                        <select class="form-control input-style" size="1" name="districtIdPresent"
+                                            onchange="" data-validate="validate(hiddenOrRequired)">
+                                            <option value="-1">Select one</option>
+
+                                            <option value="1">Dhaka</option>
+
+                                            <option value="2">Faridpur</option>
+
+                                            <option value="3">Gazipur</option>
+
+                                            <option value="4">Gopalganj</option>
+
+                                            <option value="5">Jamalpur</option>
+
+                                            <option value="6">Kishoreganj</option>
+
+                                            <option value="7">Madaripur</option>
+
+                                            <option value="8">Manikganj</option>
+
+                                            <option value="9">Munshiganj</option>
+
+                                            <option value="10">Mymensingh</option>
+
+                                            <option value="11">Narayanganj</option>
+
+                                            <option value="12">Narsingdi</option>
+
+                                            <option value="13">Netrokona</option>
+
+                                            <option value="14">Rajbari</option>
+
+                                            <option value="15">Shariatpur</option>
+
+                                            <option value="16">Sherpur</option>
+
+                                            <option value="17">Tangail</option>
+
+                                            <option value="18">Bogra</option>
+
+                                            <option value="19">Joypurhat</option>
+
+                                            <option value="20">Naogaon</option>
+
+                                            <option value="21">Natore</option>
+
+                                            <option value="22">Chapai Nawabganjj</option>
+
+                                            <option value="23">Pabna</option>
+
+                                            <option value="24">Rajshahi</option>
+
+                                            <option value="25">Sirajgonj</option>
+
+                                            <option value="26">Dinajpur</option>
+
+                                            <option value="27">Gaibandha</option>
+
+                                            <option value="28">Kurigram</option>
+
+                                            <option value="29">Lalmonirhat</option>
+
+                                            <option value="30">Nilphamari</option>
+
+                                            <option value="31">Panchagarh</option>
+
+                                            <option value="32">Rangpur</option>
+
+                                            <option value="33">Thakurgaon</option>
+
+                                            <option value="34">Barguna</option>
+
+                                            <option value="35">Barisal</option>
+
+                                            <option value="36">Bhola</option>
+
+                                            <option value="37">Jhalokati</option>
+
+                                            <option value="38">Patuakhali</option>
+
+                                            <option value="39">Pirojpur</option>
+
+                                            <option value="40">Bandarban</option>
+
+                                            <option value="41">Brahmanbaria</option>
+
+                                            <option value="42">Chandpur</option>
+
+                                            <option value="43">Chittagong</option>
+
+                                            <option value="44">Comilla</option>
+
+                                            <option value="45">Cox's Bazar</option>
+
+                                            <option value="46">Feni</option>
+
+                                            <option value="47">Khagrachari</option>
+
+                                            <option value="48">Lakshmipur</option>
+
+                                            <option value="49">Noakhali</option>
+
+                                            <option value="50">Rangamati</option>
+
+                                            <option value="51">Habiganj</option>
+
+                                            <option value="52">Maulvibazar</option>
+
+                                            <option value="53">Sunamganj</option>
+
+                                            <option value="54">Sylhet</option>
+
+                                            <option value="55">Bagerhat</option>
+
+                                            <option value="56">Chuadanga</option>
+
+                                            <option value="57">Jessore</option>
+
+                                            <option value="58">Jhenaidah</option>
+
+                                            <option value="59">Khulna</option>
+
+                                            <option value="60">Kushtia</option>
+
+                                            <option value="61">Magura</option>
+
+                                            <option value="62">Meherpur</option>
+
+                                            <option value="63">Narail</option>
+
+                                            <option value="64">Satkhira</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="row m5">
+                                    <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <label>Upazila <span class="relative"><span
+                                                    class="required-star">*</span></span></label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                        <select class="form-control input-style" size="1" name="upazilaIdPresent"
+                                            onChange="" data-validate="validate(hiddenOrRequired)">
+                                            <option value="-1">Select one</option>
+
+                                            <option value="1">Amtali</option>
+
+                                            <option value="2">Bamna</option>
+
+                                            <option value="3">Barguna Sadar</option>
+
+                                            <option value="4">Betagi</option>
+
+                                            <option value="5">Patharghata</option>
+
+                                            <option value="6">Taltali</option>
+
+                                            <option value="7">Muladi</option>
+
+                                            <option value="8">Babuganj</option>
+
+                                            <option value="9">Agailjhara</option>
+
+                                            <option value="10">Barisal Sadar</option>
+
+                                            <option value="11">Bakerganj</option>
+
+                                            <option value="12">Banaripara</option>
+
+                                            <option value="13">Gaurnadi</option>
+
+                                            <option value="14">Hizla</option>
+
+                                            <option value="15">Mehendiganj</option>
+
+                                            <option value="16">Wazirpur</option>
+
+                                            <option value="17">Bhola Sadar </option>
+
+                                            <option value="18">Burhanuddin </option>
+
+                                            <option value="19">Char Fasson </option>
+
+                                            <option value="20">Daulatkhan </option>
+
+                                            <option value="21">Lalmohan </option>
+
+                                            <option value="22">Manpura </option>
+
+                                            <option value="23">Tazumuddin </option>
+
+                                            <option value="24">Jhalokati Sadar </option>
+
+                                            <option value="25">Kathalia </option>
+
+                                            <option value="26">Nalchity </option>
+
+                                            <option value="27">Rajapur </option>
+
+                                            <option value="28">Bauphal </option>
+
+                                            <option value="29">Dashmina </option>
+
+                                            <option value="30">Galachipa </option>
+
+                                            <option value="31">Kalapara </option>
+
+                                            <option value="32">Mirzaganj </option>
+
+                                            <option value="33">Patuakhali Sadar </option>
+
+                                            <option value="34">Dumki </option>
+
+                                            <option value="35">Rangabali </option>
+
+                                            <option value="36">Bhandaria</option>
+
+                                            <option value="37">Kaukhali</option>
+
+                                            <option value="38">Mathbaria</option>
+
+                                            <option value="39">Nazirpur</option>
+
+                                            <option value="40">Nesarabad</option>
+
+                                            <option value="41">Pirojpur Sadar</option>
+
+                                            <option value="42">Zianagar</option>
+
+                                            <option value="43">Bandarban Sadar</option>
+
+                                            <option value="44">Thanchi</option>
+
+                                            <option value="45">Lama</option>
+
+                                            <option value="46">Naikhongchhari</option>
+
+                                            <option value="47">Ali kadam</option>
+
+                                            <option value="48">Rowangchhari</option>
+
+                                            <option value="49">Ruma</option>
+
+                                            <option value="50">Brahmanbaria Sadar </option>
+
+                                            <option value="51">Ashuganj </option>
+
+                                            <option value="52">Nasirnagar </option>
+
+                                            <option value="53">Nabinagar </option>
+
+                                            <option value="54">Sarail </option>
+
+                                            <option value="55">Shahbazpur Town</option>
+
+                                            <option value="56">Kasba </option>
+
+                                            <option value="57">Akhaura </option>
+
+                                            <option value="58">Bancharampur </option>
+
+                                            <option value="59">Bijoynagar </option>
+
+                                            <option value="60">Chandpur Sadar</option>
+
+                                            <option value="61">Faridganj</option>
+
+                                            <option value="62">Haimchar</option>
+
+                                            <option value="63">Haziganj</option>
+
+                                            <option value="64">Kachua</option>
+
+                                            <option value="65">Matlab Uttar</option>
+
+                                            <option value="66">Matlab Dakkhin</option>
+
+                                            <option value="67">Shahrasti</option>
+
+                                            <option value="68">Anwara </option>
+
+                                            <option value="69">Banshkhali </option>
+
+                                            <option value="70">Boalkhali </option>
+
+                                            <option value="71">Chandanaish </option>
+
+                                            <option value="72">Fatikchhari </option>
+
+                                            <option value="73">Hathazari </option>
+
+                                            <option value="74">Lohagara </option>
+
+                                            <option value="75">Mirsharai </option>
+
+                                            <option value="76">Patiya </option>
+
+                                            <option value="77">Rangunia </option>
+
+                                            <option value="78">Raozan </option>
+
+                                            <option value="79">Sandwip </option>
+
+                                            <option value="80">Satkania </option>
+
+                                            <option value="81">Sitakunda </option>
+
+                                            <option value="82">Barura </option>
+
+                                            <option value="83">Brahmanpara </option>
+
+                                            <option value="84">Burichong </option>
+
+                                            <option value="85">Chandina </option>
+
+                                            <option value="86">Chauddagram </option>
+
+                                            <option value="87">Daudkandi </option>
+
+                                            <option value="88">Debidwar </option>
+
+                                            <option value="89">Homna </option>
+
+                                            <option value="90">Comilla Sadar </option>
+
+                                            <option value="91">Laksam </option>
+
+                                            <option value="92">Monohorgonj </option>
+
+                                            <option value="93">Meghna </option>
+
+                                            <option value="94">Muradnagar </option>
+
+                                            <option value="95">Nangalkot </option>
+
+                                            <option value="96">Comilla Sadar South </option>
+
+                                            <option value="97">Titas </option>
+
+                                            <option value="98">Chakaria </option>
+
+                                            <option value="99">Chakaria </option>
+
+                                            <option value="100">Cox's Bazar Sadar </option>
+
+                                            <option value="101">Kutubdia </option>
+
+                                            <option value="102">Maheshkhali </option>
+
+                                            <option value="103">Ramu </option>
+
+                                            <option value="104">Teknaf </option>
+
+                                            <option value="105">Ukhia </option>
+
+                                            <option value="106">Pekua </option>
+
+                                            <option value="107">Feni Sadar</option>
+
+                                            <option value="108">Chagalnaiya</option>
+
+                                            <option value="109">Daganbhyan</option>
+
+                                            <option value="110">Parshuram</option>
+
+                                            <option value="111">Fhulgazi</option>
+
+                                            <option value="112">Sonagazi</option>
+
+                                            <option value="113">Dighinala </option>
+
+                                            <option value="114">Khagrachhari </option>
+
+                                            <option value="115">Lakshmichhari </option>
+
+                                            <option value="116">Mahalchhari </option>
+
+                                            <option value="117">Manikchhari </option>
+
+                                            <option value="118">Matiranga </option>
+
+                                            <option value="119">Panchhari </option>
+
+                                            <option value="120">Ramgarh </option>
+
+                                            <option value="121">Lakshmipur Sadar </option>
+
+                                            <option value="122">Raipur </option>
+
+                                            <option value="123">Ramganj </option>
+
+                                            <option value="124">Ramgati </option>
+
+                                            <option value="125">Komol Nagar </option>
+
+                                            <option value="126">Noakhali Sadar </option>
+
+                                            <option value="127">Begumganj </option>
+
+                                            <option value="128">Chatkhil </option>
+
+                                            <option value="129">Companyganj </option>
+
+                                            <option value="130">Shenbag </option>
+
+                                            <option value="131">Hatia </option>
+
+                                            <option value="132">Kobirhat </option>
+
+                                            <option value="133">Sonaimuri </option>
+
+                                            <option value="134">Suborno Char </option>
+
+                                            <option value="135">Rangamati Sadar </option>
+
+                                            <option value="136">Belaichhari </option>
+
+                                            <option value="137">Bagaichhari </option>
+
+                                            <option value="138">Barkal </option>
+
+                                            <option value="139">Juraichhari </option>
+
+                                            <option value="140">Rajasthali </option>
+
+                                            <option value="141">Kaptai </option>
+
+                                            <option value="142">Langadu </option>
+
+                                            <option value="143">Nannerchar </option>
+
+                                            <option value="144">Kaukhali </option>
+
+                                            <option value="145">Dhamrai </option>
+
+                                            <option value="146">Dohar </option>
+
+                                            <option value="147">Keraniganj </option>
+
+                                            <option value="148">Nawabganj </option>
+
+                                            <option value="149">Savar </option>
+
+                                            <option value="150">Faridpur Sadar </option>
+
+                                            <option value="151">Boalmari </option>
+
+                                            <option value="152">Alfadanga </option>
+
+                                            <option value="153">Madhukhali </option>
+
+                                            <option value="154">Bhanga </option>
+
+                                            <option value="155">Nagarkanda </option>
+
+                                            <option value="156">Charbhadrasan </option>
+
+                                            <option value="157">Sadarpur </option>
+
+                                            <option value="158">Shaltha </option>
+
+                                            <option value="159">Gazipur Sadar-Joydebpur</option>
+
+                                            <option value="160">Kaliakior</option>
+
+                                            <option value="161">Kapasia</option>
+
+                                            <option value="162">Sripur</option>
+
+                                            <option value="163">Kaliganj</option>
+
+                                            <option value="164">Tongi</option>
+
+                                            <option value="165">Gopalganj Sadar </option>
+
+                                            <option value="166">Kashiani </option>
+
+                                            <option value="167">Kotalipara </option>
+
+                                            <option value="168">Muksudpur </option>
+
+                                            <option value="169">Tungipara </option>
+
+                                            <option value="170">Dewanganj </option>
+
+                                            <option value="171">Baksiganj </option>
+
+                                            <option value="172">Islampur </option>
+
+                                            <option value="173">Jamalpur Sadar </option>
+
+                                            <option value="174">Madarganj </option>
+
+                                            <option value="175">Melandaha </option>
+
+                                            <option value="176">Sarishabari </option>
+
+                                            <option value="177">Narundi Police I.C</option>
+
+                                            <option value="178">Astagram </option>
+
+                                            <option value="179">Bajitpur </option>
+
+                                            <option value="180">Bhairab </option>
+
+                                            <option value="181">Hossainpur </option>
+
+                                            <option value="182">Itna </option>
+
+                                            <option value="183">Karimganj </option>
+
+                                            <option value="184">Katiadi </option>
+
+                                            <option value="185">Kishoreganj Sadar </option>
+
+                                            <option value="186">Kuliarchar </option>
+
+                                            <option value="187">Mithamain </option>
+
+                                            <option value="188">Nikli </option>
+
+                                            <option value="189">Pakundia </option>
+
+                                            <option value="190">Tarail </option>
+
+                                            <option value="191">Madaripur Sadar</option>
+
+                                            <option value="192">Kalkini</option>
+
+                                            <option value="193">Rajoir</option>
+
+                                            <option value="194">Shibchar</option>
+
+                                            <option value="195">Manikganj Sadar </option>
+
+                                            <option value="196">Singair </option>
+
+                                            <option value="197">Shibalaya </option>
+
+                                            <option value="198">Saturia </option>
+
+                                            <option value="199">Harirampur </option>
+
+                                            <option value="200">Ghior </option>
+
+                                            <option value="201">Daulatpur </option>
+
+                                            <option value="202">Lohajang </option>
+
+                                            <option value="203">Sreenagar </option>
+
+                                            <option value="204">Munshiganj Sadar </option>
+
+                                            <option value="205">Sirajdikhan </option>
+
+                                            <option value="206">Tongibari </option>
+
+                                            <option value="207">Gazaria </option>
+
+                                            <option value="208">Bhaluka</option>
+
+                                            <option value="209">Trishal</option>
+
+                                            <option value="210">Haluaghat</option>
+
+                                            <option value="211">Muktagachha</option>
+
+                                            <option value="212">Dhobaura</option>
+
+                                            <option value="213">Fulbaria</option>
+
+                                            <option value="214">Gaffargaon</option>
+
+                                            <option value="215">Gauripur</option>
+
+                                            <option value="216">Ishwarganj</option>
+
+                                            <option value="217">Mymensingh Sadar</option>
+
+                                            <option value="218">Nandail</option>
+
+                                            <option value="219">Phulpur</option>
+
+                                            <option value="220">Araihazar </option>
+
+                                            <option value="221">Sonargaon </option>
+
+                                            <option value="222">Bandar</option>
+
+                                            <option value="223">Naryanganj Sadar </option>
+
+                                            <option value="224">Rupganj </option>
+
+                                            <option value="225">Siddirgonj </option>
+
+                                            <option value="226">Belabo </option>
+
+                                            <option value="227">Monohardi </option>
+
+                                            <option value="228">Narsingdi Sadar </option>
+
+                                            <option value="229">Palash </option>
+
+                                            <option value="230">Raipura , Narsingdi</option>
+
+                                            <option value="231">Shibpur </option>
+
+                                            <option value="232">Kendua </option>
+
+                                            <option value="233">Atpara </option>
+
+                                            <option value="234">Barhatta </option>
+
+                                            <option value="235">Durgapur </option>
+
+                                            <option value="236">Kalmakanda </option>
+
+                                            <option value="237">Madan </option>
+
+                                            <option value="238">Mohanganj </option>
+
+                                            <option value="239">Netrakona-S </option>
+
+                                            <option value="240">Purbadhala </option>
+
+                                            <option value="241">Khaliajuri </option>
+
+                                            <option value="242">Baliakandi </option>
+
+                                            <option value="243">Goalandaghat </option>
+
+                                            <option value="244">Pangsha </option>
+
+                                            <option value="245">Kalukhali </option>
+
+                                            <option value="246">Rajbari Sadar </option>
+
+                                            <option value="247">Shariatpur Sadar -Palong</option>
+
+                                            <option value="248">Damudya </option>
+
+                                            <option value="249">Naria </option>
+
+                                            <option value="250">Jajira </option>
+
+                                            <option value="251">Bhedarganj </option>
+
+                                            <option value="252">Gosairhat </option>
+
+                                            <option value="253">Jhenaigati </option>
+
+                                            <option value="254">Nakla </option>
+
+                                            <option value="255">Nalitabari </option>
+
+                                            <option value="256">Sherpur Sadar </option>
+
+                                            <option value="257">Sreebardi </option>
+
+                                            <option value="258">Tangail Sadar </option>
+
+                                            <option value="259">Sakhipur </option>
+
+                                            <option value="260">Basail </option>
+
+                                            <option value="261">Madhupur </option>
+
+                                            <option value="262">Ghatail </option>
+
+                                            <option value="263">Kalihati </option>
+
+                                            <option value="264">Nagarpur </option>
+
+                                            <option value="265">Mirzapur </option>
+
+                                            <option value="266">Gopalpur </option>
+
+                                            <option value="267">Delduar </option>
+
+                                            <option value="268">Bhuapur </option>
+
+                                            <option value="269">Dhanbari </option>
+
+                                            <option value="270">Bagerhat Sadar </option>
+
+                                            <option value="271">Chitalmari </option>
+
+                                            <option value="272">Fakirhat </option>
+
+                                            <option value="273">Kachua </option>
+
+                                            <option value="274">Mollahat </option>
+
+                                            <option value="275">Mongla </option>
+
+                                            <option value="276">Morrelganj </option>
+
+                                            <option value="277">Rampal </option>
+
+                                            <option value="278">Sarankhola </option>
+
+                                            <option value="279">Damurhuda </option>
+
+                                            <option value="280">Chuadanga-S </option>
+
+                                            <option value="281">Jibannagar </option>
+
+                                            <option value="282">Alamdanga </option>
+
+                                            <option value="283">Abhaynagar </option>
+
+                                            <option value="284">Keshabpur </option>
+
+                                            <option value="285">Bagherpara </option>
+
+                                            <option value="286">Jessore Sadar </option>
+
+                                            <option value="287">Chaugachha </option>
+
+                                            <option value="288">Manirampur </option>
+
+                                            <option value="289">Jhikargachha </option>
+
+                                            <option value="290">Sharsha </option>
+
+                                            <option value="291">Jhenaidah Sadar </option>
+
+                                            <option value="292">Maheshpur </option>
+
+                                            <option value="293">Kaliganj </option>
+
+                                            <option value="294">Kotchandpur </option>
+
+                                            <option value="295">Shailkupa </option>
+
+                                            <option value="296">Harinakunda </option>
+
+                                            <option value="297">Terokhada </option>
+
+                                            <option value="298">Batiaghata </option>
+
+                                            <option value="299">Dacope </option>
+
+                                            <option value="300">Dumuria </option>
+
+                                            <option value="301">Dighalia </option>
+
+                                            <option value="302">Koyra </option>
+
+                                            <option value="303">Paikgachha </option>
+
+                                            <option value="304">Phultala </option>
+
+                                            <option value="305">Rupsa </option>
+
+                                            <option value="306">Kushtia Sadar</option>
+
+                                            <option value="307">Kumarkhali</option>
+
+                                            <option value="308">Daulatpur</option>
+
+                                            <option value="309">Mirpur</option>
+
+                                            <option value="310">Bheramara</option>
+
+                                            <option value="311">Khoksa</option>
+
+                                            <option value="312">Magura Sadar </option>
+
+                                            <option value="313">Mohammadpur </option>
+
+                                            <option value="314">Shalikha </option>
+
+                                            <option value="315">Sreepur </option>
+
+                                            <option value="316">angni </option>
+
+                                            <option value="317">Mujib Nagar </option>
+
+                                            <option value="318">Meherpur-S </option>
+
+                                            <option value="319">Narail-S </option>
+
+                                            <option value="320">Lohagara </option>
+
+                                            <option value="321">Kalia </option>
+
+                                            <option value="322">Satkhira Sadar </option>
+
+                                            <option value="323">Assasuni </option>
+
+                                            <option value="324">Debhata </option>
+
+                                            <option value="325">Tala </option>
+
+                                            <option value="326">Kalaroa </option>
+
+                                            <option value="327">Kaliganj </option>
+
+                                            <option value="328">Shyamnagar </option>
+
+                                            <option value="329">Adamdighi</option>
+
+                                            <option value="330">Bogra Sadar</option>
+
+                                            <option value="331">Sherpur</option>
+
+                                            <option value="332">Dhunat</option>
+
+                                            <option value="333">Dhupchanchia</option>
+
+                                            <option value="334">Gabtali</option>
+
+                                            <option value="335">Kahaloo</option>
+
+                                            <option value="336">Nandigram</option>
+
+                                            <option value="337">Sahajanpur</option>
+
+                                            <option value="338">Sariakandi</option>
+
+                                            <option value="339">Shibganj</option>
+
+                                            <option value="340">Sonatala</option>
+
+                                            <option value="341">Joypurhat S</option>
+
+                                            <option value="342">Akkelpur</option>
+
+                                            <option value="343">Kalai</option>
+
+                                            <option value="344">Khetlal</option>
+
+                                            <option value="345">Panchbibi</option>
+
+                                            <option value="346">Naogaon Sadar </option>
+
+                                            <option value="347">Mohadevpur </option>
+
+                                            <option value="348">Manda </option>
+
+                                            <option value="349">Niamatpur </option>
+
+                                            <option value="350">Atrai </option>
+
+                                            <option value="351">Raninagar </option>
+
+                                            <option value="352">Patnitala </option>
+
+                                            <option value="353">Dhamoirhat </option>
+
+                                            <option value="354">Sapahar </option>
+
+                                            <option value="355">Porsha </option>
+
+                                            <option value="356">Badalgachhi </option>
+
+                                            <option value="357">Natore Sadar </option>
+
+                                            <option value="358">Baraigram </option>
+
+                                            <option value="359">Bagatipara </option>
+
+                                            <option value="360">Lalpur </option>
+
+                                            <option value="361">Natore Sadar </option>
+
+                                            <option value="362">Baraigram </option>
+
+                                            <option value="363">Bholahat </option>
+
+                                            <option value="364">Gomastapur </option>
+
+                                            <option value="365">Nachole </option>
+
+                                            <option value="366">Nawabganj Sadar </option>
+
+                                            <option value="367">Shibganj </option>
+
+                                            <option value="368">Atgharia </option>
+
+                                            <option value="369">Bera </option>
+
+                                            <option value="370">Bhangura </option>
+
+                                            <option value="371">Chatmohar </option>
+
+                                            <option value="372">Faridpur </option>
+
+                                            <option value="373">Ishwardi </option>
+
+                                            <option value="374">Pabna Sadar </option>
+
+                                            <option value="375">Santhia </option>
+
+                                            <option value="376">Sujanagar </option>
+
+                                            <option value="377">Bagha</option>
+
+                                            <option value="378">Bagmara</option>
+
+                                            <option value="379">Charghat</option>
+
+                                            <option value="380">Durgapur</option>
+
+                                            <option value="381">Godagari</option>
+
+                                            <option value="382">Mohanpur</option>
+
+                                            <option value="383">Paba</option>
+
+                                            <option value="384">Puthia</option>
+
+                                            <option value="385">Tanore</option>
+
+                                            <option value="386">Sirajganj Sadar </option>
+
+                                            <option value="387">Belkuchi </option>
+
+                                            <option value="388">Chauhali </option>
+
+                                            <option value="389">Kamarkhanda </option>
+
+                                            <option value="390">Kazipur </option>
+
+                                            <option value="391">Raiganj </option>
+
+                                            <option value="392">Shahjadpur </option>
+
+                                            <option value="393">Tarash </option>
+
+                                            <option value="394">Ullahpara </option>
+
+                                            <option value="395">Birampur </option>
+
+                                            <option value="396">Birganj</option>
+
+                                            <option value="397">Biral </option>
+
+                                            <option value="398">Bochaganj </option>
+
+                                            <option value="399">Chirirbandar </option>
+
+                                            <option value="400">Phulbari </option>
+
+                                            <option value="401">Ghoraghat </option>
+
+                                            <option value="402">Hakimpur </option>
+
+                                            <option value="403">Kaharole </option>
+
+                                            <option value="404">Khansama </option>
+
+                                            <option value="405">Dinajpur Sadar </option>
+
+                                            <option value="406">Nawabganj</option>
+
+                                            <option value="407">Parbatipur </option>
+
+                                            <option value="408">Fulchhari</option>
+
+                                            <option value="409">Gaibandha sadar</option>
+
+                                            <option value="410">Gobindaganj</option>
+
+                                            <option value="411">Palashbari</option>
+
+                                            <option value="412">Sadullapur</option>
+
+                                            <option value="413">Saghata</option>
+
+                                            <option value="414">Sundarganj</option>
+
+                                            <option value="415">Kurigram Sadar</option>
+
+                                            <option value="416">Nageshwari</option>
+
+                                            <option value="417">Bhurungamari</option>
+
+                                            <option value="418">Phulbari</option>
+
+                                            <option value="419">Rajarhat</option>
+
+                                            <option value="420">Ulipur</option>
+
+                                            <option value="421">Chilmari</option>
+
+                                            <option value="422">Rowmari</option>
+
+                                            <option value="423">Char Rajibpur</option>
+
+                                            <option value="424">Lalmanirhat Sadar</option>
+
+                                            <option value="425">Aditmari</option>
+
+                                            <option value="426">Kaliganj</option>
+
+                                            <option value="427">Hatibandha</option>
+
+                                            <option value="428">Patgram</option>
+
+                                            <option value="429">Nilphamari Sadar</option>
+
+                                            <option value="430">Saidpur</option>
+
+                                            <option value="431">Jaldhaka</option>
+
+                                            <option value="432">Kishoreganj</option>
+
+                                            <option value="433">Domar</option>
+
+                                            <option value="434">Dimla</option>
+
+                                            <option value="435">Panchagarh Sadar</option>
+
+                                            <option value="436">Debiganj</option>
+
+                                            <option value="437">Boda</option>
+
+                                            <option value="438">Atwari</option>
+
+                                            <option value="439">Tetulia</option>
+
+                                            <option value="440">Badarganj</option>
+
+                                            <option value="441">Mithapukur</option>
+
+                                            <option value="442">Gangachara</option>
+
+                                            <option value="443">Kaunia</option>
+
+                                            <option value="444">Rangpur Sadar</option>
+
+                                            <option value="445">Pirgachha</option>
+
+                                            <option value="446">Pirganj</option>
+
+                                            <option value="447">Taraganj</option>
+
+                                            <option value="448">Thakurgaon Sadar </option>
+
+                                            <option value="449">Pirganj </option>
+
+                                            <option value="450">Baliadangi </option>
+
+                                            <option value="451">Haripur </option>
+
+                                            <option value="452">Ranisankail </option>
+
+                                            <option value="453">Ajmiriganj</option>
+
+                                            <option value="454">Baniachang</option>
+
+                                            <option value="455">Bahubal</option>
+
+                                            <option value="456">Chunarughat</option>
+
+                                            <option value="457">Habiganj Sadar</option>
+
+                                            <option value="458">Lakhai</option>
+
+                                            <option value="459">Madhabpur</option>
+
+                                            <option value="460">Nabiganj</option>
+
+                                            <option value="461">Shaistagonj </option>
+
+                                            <option value="462">Moulvibazar Sadar</option>
+
+                                            <option value="463">Barlekha</option>
+
+                                            <option value="464">Juri</option>
+
+                                            <option value="465">Kamalganj</option>
+
+                                            <option value="466">Kulaura</option>
+
+                                            <option value="467">Rajnagar</option>
+
+                                            <option value="468">Sreemangal</option>
+
+                                            <option value="469">Bishwamvarpur</option>
+
+                                            <option value="470">Chhatak</option>
+
+                                            <option value="471">Derai</option>
+
+                                            <option value="472">Dharampasha</option>
+
+                                            <option value="473">Dowarabazar</option>
+
+                                            <option value="474">Jagannathpur</option>
+
+                                            <option value="475">Jamalganj</option>
+
+                                            <option value="476">Sulla</option>
+
+                                            <option value="477">Sunamganj Sadar</option>
+
+                                            <option value="478">Shanthiganj</option>
+
+                                            <option value="479">Tahirpur</option>
+
+                                            <option value="480">Sylhet Sadar</option>
+
+                                            <option value="481">Beanibazar</option>
+
+                                            <option value="482">Bishwanath</option>
+
+                                            <option value="483">Dakshin Surma </option>
+
+                                            <option value="484">Balaganj</option>
+
+                                            <option value="485">Companiganj</option>
+
+                                            <option value="486">Fenchuganj</option>
+
+                                            <option value="487">Golapganj</option>
+
+                                            <option value="488">Gowainghat</option>
+
+                                            <option value="489">Jaintiapur</option>
+
+                                            <option value="490">Kanaighat</option>
+
+                                            <option value="491">Zakiganj</option>
+
+                                            <option value="492">Nobigonj</option>
+
+                                            <option value="493">Dhaka Metro</option>
+
+                                            <option value="494">Chittagong Metro</option>
+
+                                            <option value="495">Khulna Metro</option>
+
+                                            <option value="496">Adabor</option>
+
+                                            <option value="497">Badda</option>
+
+                                            <option value="498">Banani</option>
+
+                                            <option value="499">Bangshal</option>
+
+                                            <option value="500">Bimanbandar</option>
+
+                                            <option value="501">Cantonment</option>
+
+                                            <option value="502">ChalkBazar</option>
+
+                                            <option value="503">Dakhinkhan</option>
+
+                                            <option value="504">Ramna</option>
+
+                                            <option value="505">Motijheel </option>
+
+                                            <option value="506">Kotwali</option>
+
+                                            <option value="507">Dhanmondi </option>
+
+                                            <option value="508">Mohammadpur</option>
+
+                                            <option value="509">Sutrapur</option>
+
+                                            <option value="510">Tejgaon</option>
+
+                                            <option value="511">Gulshan</option>
+
+                                            <option value="512">Lalbagh</option>
+
+                                            <option value="513">Mirpur</option>
+
+                                            <option value="514">Pallabi</option>
+
+                                            <option value="515">Sabujbag</option>
+
+                                            <option value="516">Demra</option>
+
+                                            <option value="517">Hazaribagh</option>
+
+                                            <option value="518">Shyampur</option>
+
+                                            <option value="519">Kafrul</option>
+
+                                            <option value="520">Kamringir Char</option>
+
+                                            <option value="521">Khilgaon </option>
+
+                                            <option value="522">Uttara </option>
+
+                                            <option value="523">Shah Ali</option>
+
+                                            <option value="524">Paltan </option>
+
+                                            <option value="525">Darus Salam</option>
+
+                                            <option value="526">Uttarkhan </option>
+
+                                            <option value="527">Kadamtoli </option>
+
+                                            <option value="528">Gendaria</option>
+
+                                            <option value="529">Tejgaon Industrial </option>
+
+                                            <option value="530">Turag </option>
+
+                                            <option value="531">Bhashantek </option>
+
+                                            <option value="532">Bhatara </option>
+
+                                            <option value="533">Jatrabari </option>
+
+                                            <option value="534">Rampura </option>
+
+                                            <option value="535">Rupnagar</option>
+
+                                            <option value="536">Sherebangla Nagar</option>
+
+                                            <option value="537">Shahjahanpur</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="row m5">
+                                    <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <label>Post Office <span class="relative"><span
+                                                    class="required-star">*</span></span></label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                        <input class="form-control input-style" type="text" value=""
+                                            name="postOfficePresent">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="row m5">
+                                    <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <label>Post Code <span class="relative"><span
+                                                    class="required-star">*</span></span></label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                        <input class="form-control input-style" type="text" value=""
+                                            name="postCodePresent">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div id="permanentAddress" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 subDiv">
+                                <div class="row divHeader">
+                                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <label>Permanent address * </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 text-right">
+                                        <input type="checkbox" onChange="changePermanent(this);">Same as Present address
+                                    </div>
+                                </div>
+                                <div class="row m5">
+                                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <label>Care of <span class="relative"><span
+                                                    class="required-star">*</span></span></label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                        <input class="form-control input-style" type="text" value=""
+                                            name="careOfPermanent">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="row m5">
+                                    <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <label>village/Town/Road/House/Flat <span class="relative"><span
+                                                    class="required-star">*</span></span></label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                        <textarea class="form-control input-style"
+                                            name="villageTownPermanent"></textarea>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="row m5">
+                                    <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <label>District <span class="relative"><span
+                                                    class="required-star">*</span></span></label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                        <select class="form-control input-style" size="1" name="districtIdPermanent"
+                                            onChange="" data-validate="validate(hiddenOrRequired)">
+                                            <option value="-1">Select one</option>
+
+                                            <option value="1">Dhaka</option>
+
+                                            <option value="2">Faridpur</option>
+
+                                            <option value="3">Gazipur</option>
+
+                                            <option value="4">Gopalganj</option>
+
+                                            <option value="5">Jamalpur</option>
+
+                                            <option value="6">Kishoreganj</option>
+
+                                            <option value="7">Madaripur</option>
+
+                                            <option value="8">Manikganj</option>
+
+                                            <option value="9">Munshiganj</option>
+
+                                            <option value="10">Mymensingh</option>
+
+                                            <option value="11">Narayanganj</option>
+
+                                            <option value="12">Narsingdi</option>
+
+                                            <option value="13">Netrokona</option>
+
+                                            <option value="14">Rajbari</option>
+
+                                            <option value="15">Shariatpur</option>
+
+                                            <option value="16">Sherpur</option>
+
+                                            <option value="17">Tangail</option>
+
+                                            <option value="18">Bogra</option>
+
+                                            <option value="19">Joypurhat</option>
+
+                                            <option value="20">Naogaon</option>
+
+                                            <option value="21">Natore</option>
+
+                                            <option value="22">Chapai Nawabganjj</option>
+
+                                            <option value="23">Pabna</option>
+
+                                            <option value="24">Rajshahi</option>
+
+                                            <option value="25">Sirajgonj</option>
+
+                                            <option value="26">Dinajpur</option>
+
+                                            <option value="27">Gaibandha</option>
+
+                                            <option value="28">Kurigram</option>
+
+                                            <option value="29">Lalmonirhat</option>
+
+                                            <option value="30">Nilphamari</option>
+
+                                            <option value="31">Panchagarh</option>
+
+                                            <option value="32">Rangpur</option>
+
+                                            <option value="33">Thakurgaon</option>
+
+                                            <option value="34">Barguna</option>
+
+                                            <option value="35">Barisal</option>
+
+                                            <option value="36">Bhola</option>
+
+                                            <option value="37">Jhalokati</option>
+
+                                            <option value="38">Patuakhali</option>
+
+                                            <option value="39">Pirojpur</option>
+
+                                            <option value="40">Bandarban</option>
+
+                                            <option value="41">Brahmanbaria</option>
+
+                                            <option value="42">Chandpur</option>
+
+                                            <option value="43">Chittagong</option>
+
+                                            <option value="44">Comilla</option>
+
+                                            <option value="45">Cox's Bazar</option>
+
+                                            <option value="46">Feni</option>
+
+                                            <option value="47">Khagrachari</option>
+
+                                            <option value="48">Lakshmipur</option>
+
+                                            <option value="49">Noakhali</option>
+
+                                            <option value="50">Rangamati</option>
+
+                                            <option value="51">Habiganj</option>
+
+                                            <option value="52">Maulvibazar</option>
+
+                                            <option value="53">Sunamganj</option>
+
+                                            <option value="54">Sylhet</option>
+
+                                            <option value="55">Bagerhat</option>
+
+                                            <option value="56">Chuadanga</option>
+
+                                            <option value="57">Jessore</option>
+
+                                            <option value="58">Jhenaidah</option>
+
+                                            <option value="59">Khulna</option>
+
+                                            <option value="60">Kushtia</option>
+
+                                            <option value="61">Magura</option>
+
+                                            <option value="62">Meherpur</option>
+
+                                            <option value="63">Narail</option>
+
+                                            <option value="64">Satkhira</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="row m5">
+                                    <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <label>Upazila <span class="relative"><span
+                                                    class="required-star">*</span></span></label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                        <select class="form-control input-style" size="1" name="upazilaIdPermanent"
+                                            onChange="" data-validate="validate(hiddenOrRequired)">
+                                            <option value="-1">Select one</option>
+
+                                            <option value="1">Amtali</option>
+
+                                            <option value="2">Bamna</option>
+
+                                            <option value="3">Barguna Sadar</option>
+
+                                            <option value="4">Betagi</option>
+
+                                            <option value="5">Patharghata</option>
+
+                                            <option value="6">Taltali</option>
+
+                                            <option value="7">Muladi</option>
+
+                                            <option value="8">Babuganj</option>
+
+                                            <option value="9">Agailjhara</option>
+
+                                            <option value="10">Barisal Sadar</option>
+
+                                            <option value="11">Bakerganj</option>
+
+                                            <option value="12">Banaripara</option>
+
+                                            <option value="13">Gaurnadi</option>
+
+                                            <option value="14">Hizla</option>
+
+                                            <option value="15">Mehendiganj</option>
+
+                                            <option value="16">Wazirpur</option>
+
+                                            <option value="17">Bhola Sadar </option>
+
+                                            <option value="18">Burhanuddin </option>
+
+                                            <option value="19">Char Fasson </option>
+
+                                            <option value="20">Daulatkhan </option>
+
+                                            <option value="21">Lalmohan </option>
+
+                                            <option value="22">Manpura </option>
+
+                                            <option value="23">Tazumuddin </option>
+
+                                            <option value="24">Jhalokati Sadar </option>
+
+                                            <option value="25">Kathalia </option>
+
+                                            <option value="26">Nalchity </option>
+
+                                            <option value="27">Rajapur </option>
+
+                                            <option value="28">Bauphal </option>
+
+                                            <option value="29">Dashmina </option>
+
+                                            <option value="30">Galachipa </option>
+
+                                            <option value="31">Kalapara </option>
+
+                                            <option value="32">Mirzaganj </option>
+
+                                            <option value="33">Patuakhali Sadar </option>
+
+                                            <option value="34">Dumki </option>
+
+                                            <option value="35">Rangabali </option>
+
+                                            <option value="36">Bhandaria</option>
+
+                                            <option value="37">Kaukhali</option>
+
+                                            <option value="38">Mathbaria</option>
+
+                                            <option value="39">Nazirpur</option>
+
+                                            <option value="40">Nesarabad</option>
+
+                                            <option value="41">Pirojpur Sadar</option>
+
+                                            <option value="42">Zianagar</option>
+
+                                            <option value="43">Bandarban Sadar</option>
+
+                                            <option value="44">Thanchi</option>
+
+                                            <option value="45">Lama</option>
+
+                                            <option value="46">Naikhongchhari</option>
+
+                                            <option value="47">Ali kadam</option>
+
+                                            <option value="48">Rowangchhari</option>
+
+                                            <option value="49">Ruma</option>
+
+                                            <option value="50">Brahmanbaria Sadar </option>
+
+                                            <option value="51">Ashuganj </option>
+
+                                            <option value="52">Nasirnagar </option>
+
+                                            <option value="53">Nabinagar </option>
+
+                                            <option value="54">Sarail </option>
+
+                                            <option value="55">Shahbazpur Town</option>
+
+                                            <option value="56">Kasba </option>
+
+                                            <option value="57">Akhaura </option>
+
+                                            <option value="58">Bancharampur </option>
+
+                                            <option value="59">Bijoynagar </option>
+
+                                            <option value="60">Chandpur Sadar</option>
+
+                                            <option value="61">Faridganj</option>
+
+                                            <option value="62">Haimchar</option>
+
+                                            <option value="63">Haziganj</option>
+
+                                            <option value="64">Kachua</option>
+
+                                            <option value="65">Matlab Uttar</option>
+
+                                            <option value="66">Matlab Dakkhin</option>
+
+                                            <option value="67">Shahrasti</option>
+
+                                            <option value="68">Anwara </option>
+
+                                            <option value="69">Banshkhali </option>
+
+                                            <option value="70">Boalkhali </option>
+
+                                            <option value="71">Chandanaish </option>
+
+                                            <option value="72">Fatikchhari </option>
+
+                                            <option value="73">Hathazari </option>
+
+                                            <option value="74">Lohagara </option>
+
+                                            <option value="75">Mirsharai </option>
+
+                                            <option value="76">Patiya </option>
+
+                                            <option value="77">Rangunia </option>
+
+                                            <option value="78">Raozan </option>
+
+                                            <option value="79">Sandwip </option>
+
+                                            <option value="80">Satkania </option>
+
+                                            <option value="81">Sitakunda </option>
+
+                                            <option value="82">Barura </option>
+
+                                            <option value="83">Brahmanpara </option>
+
+                                            <option value="84">Burichong </option>
+
+                                            <option value="85">Chandina </option>
+
+                                            <option value="86">Chauddagram </option>
+
+                                            <option value="87">Daudkandi </option>
+
+                                            <option value="88">Debidwar </option>
+
+                                            <option value="89">Homna </option>
+
+                                            <option value="90">Comilla Sadar </option>
+
+                                            <option value="91">Laksam </option>
+
+                                            <option value="92">Monohorgonj </option>
+
+                                            <option value="93">Meghna </option>
+
+                                            <option value="94">Muradnagar </option>
+
+                                            <option value="95">Nangalkot </option>
+
+                                            <option value="96">Comilla Sadar South </option>
+
+                                            <option value="97">Titas </option>
+
+                                            <option value="98">Chakaria </option>
+
+                                            <option value="99">Chakaria </option>
+
+                                            <option value="100">Cox's Bazar Sadar </option>
+
+                                            <option value="101">Kutubdia </option>
+
+                                            <option value="102">Maheshkhali </option>
+
+                                            <option value="103">Ramu </option>
+
+                                            <option value="104">Teknaf </option>
+
+                                            <option value="105">Ukhia </option>
+
+                                            <option value="106">Pekua </option>
+
+                                            <option value="107">Feni Sadar</option>
+
+                                            <option value="108">Chagalnaiya</option>
+
+                                            <option value="109">Daganbhyan</option>
+
+                                            <option value="110">Parshuram</option>
+
+                                            <option value="111">Fhulgazi</option>
+
+                                            <option value="112">Sonagazi</option>
+
+                                            <option value="113">Dighinala </option>
+
+                                            <option value="114">Khagrachhari </option>
+
+                                            <option value="115">Lakshmichhari </option>
+
+                                            <option value="116">Mahalchhari </option>
+
+                                            <option value="117">Manikchhari </option>
+
+                                            <option value="118">Matiranga </option>
+
+                                            <option value="119">Panchhari </option>
+
+                                            <option value="120">Ramgarh </option>
+
+                                            <option value="121">Lakshmipur Sadar </option>
+
+                                            <option value="122">Raipur </option>
+
+                                            <option value="123">Ramganj </option>
+
+                                            <option value="124">Ramgati </option>
+
+                                            <option value="125">Komol Nagar </option>
+
+                                            <option value="126">Noakhali Sadar </option>
+
+                                            <option value="127">Begumganj </option>
+
+                                            <option value="128">Chatkhil </option>
+
+                                            <option value="129">Companyganj </option>
+
+                                            <option value="130">Shenbag </option>
+
+                                            <option value="131">Hatia </option>
+
+                                            <option value="132">Kobirhat </option>
+
+                                            <option value="133">Sonaimuri </option>
+
+                                            <option value="134">Suborno Char </option>
+
+                                            <option value="135">Rangamati Sadar </option>
+
+                                            <option value="136">Belaichhari </option>
+
+                                            <option value="137">Bagaichhari </option>
+
+                                            <option value="138">Barkal </option>
+
+                                            <option value="139">Juraichhari </option>
+
+                                            <option value="140">Rajasthali </option>
+
+                                            <option value="141">Kaptai </option>
+
+                                            <option value="142">Langadu </option>
+
+                                            <option value="143">Nannerchar </option>
+
+                                            <option value="144">Kaukhali </option>
+
+                                            <option value="145">Dhamrai </option>
+
+                                            <option value="146">Dohar </option>
+
+                                            <option value="147">Keraniganj </option>
+
+                                            <option value="148">Nawabganj </option>
+
+                                            <option value="149">Savar </option>
+
+                                            <option value="150">Faridpur Sadar </option>
+
+                                            <option value="151">Boalmari </option>
+
+                                            <option value="152">Alfadanga </option>
+
+                                            <option value="153">Madhukhali </option>
+
+                                            <option value="154">Bhanga </option>
+
+                                            <option value="155">Nagarkanda </option>
+
+                                            <option value="156">Charbhadrasan </option>
+
+                                            <option value="157">Sadarpur </option>
+
+                                            <option value="158">Shaltha </option>
+
+                                            <option value="159">Gazipur Sadar-Joydebpur</option>
+
+                                            <option value="160">Kaliakior</option>
+
+                                            <option value="161">Kapasia</option>
+
+                                            <option value="162">Sripur</option>
+
+                                            <option value="163">Kaliganj</option>
+
+                                            <option value="164">Tongi</option>
+
+                                            <option value="165">Gopalganj Sadar </option>
+
+                                            <option value="166">Kashiani </option>
+
+                                            <option value="167">Kotalipara </option>
+
+                                            <option value="168">Muksudpur </option>
+
+                                            <option value="169">Tungipara </option>
+
+                                            <option value="170">Dewanganj </option>
+
+                                            <option value="171">Baksiganj </option>
+
+                                            <option value="172">Islampur </option>
+
+                                            <option value="173">Jamalpur Sadar </option>
+
+                                            <option value="174">Madarganj </option>
+
+                                            <option value="175">Melandaha </option>
+
+                                            <option value="176">Sarishabari </option>
+
+                                            <option value="177">Narundi Police I.C</option>
+
+                                            <option value="178">Astagram </option>
+
+                                            <option value="179">Bajitpur </option>
+
+                                            <option value="180">Bhairab </option>
+
+                                            <option value="181">Hossainpur </option>
+
+                                            <option value="182">Itna </option>
+
+                                            <option value="183">Karimganj </option>
+
+                                            <option value="184">Katiadi </option>
+
+                                            <option value="185">Kishoreganj Sadar </option>
+
+                                            <option value="186">Kuliarchar </option>
+
+                                            <option value="187">Mithamain </option>
+
+                                            <option value="188">Nikli </option>
+
+                                            <option value="189">Pakundia </option>
+
+                                            <option value="190">Tarail </option>
+
+                                            <option value="191">Madaripur Sadar</option>
+
+                                            <option value="192">Kalkini</option>
+
+                                            <option value="193">Rajoir</option>
+
+                                            <option value="194">Shibchar</option>
+
+                                            <option value="195">Manikganj Sadar </option>
+
+                                            <option value="196">Singair </option>
+
+                                            <option value="197">Shibalaya </option>
+
+                                            <option value="198">Saturia </option>
+
+                                            <option value="199">Harirampur </option>
+
+                                            <option value="200">Ghior </option>
+
+                                            <option value="201">Daulatpur </option>
+
+                                            <option value="202">Lohajang </option>
+
+                                            <option value="203">Sreenagar </option>
+
+                                            <option value="204">Munshiganj Sadar </option>
+
+                                            <option value="205">Sirajdikhan </option>
+
+                                            <option value="206">Tongibari </option>
+
+                                            <option value="207">Gazaria </option>
+
+                                            <option value="208">Bhaluka</option>
+
+                                            <option value="209">Trishal</option>
+
+                                            <option value="210">Haluaghat</option>
+
+                                            <option value="211">Muktagachha</option>
+
+                                            <option value="212">Dhobaura</option>
+
+                                            <option value="213">Fulbaria</option>
+
+                                            <option value="214">Gaffargaon</option>
+
+                                            <option value="215">Gauripur</option>
+
+                                            <option value="216">Ishwarganj</option>
+
+                                            <option value="217">Mymensingh Sadar</option>
+
+                                            <option value="218">Nandail</option>
+
+                                            <option value="219">Phulpur</option>
+
+                                            <option value="220">Araihazar </option>
+
+                                            <option value="221">Sonargaon </option>
+
+                                            <option value="222">Bandar</option>
+
+                                            <option value="223">Naryanganj Sadar </option>
+
+                                            <option value="224">Rupganj </option>
+
+                                            <option value="225">Siddirgonj </option>
+
+                                            <option value="226">Belabo </option>
+
+                                            <option value="227">Monohardi </option>
+
+                                            <option value="228">Narsingdi Sadar </option>
+
+                                            <option value="229">Palash </option>
+
+                                            <option value="230">Raipura , Narsingdi</option>
+
+                                            <option value="231">Shibpur </option>
+
+                                            <option value="232">Kendua </option>
+
+                                            <option value="233">Atpara </option>
+
+                                            <option value="234">Barhatta </option>
+
+                                            <option value="235">Durgapur </option>
+
+                                            <option value="236">Kalmakanda </option>
+
+                                            <option value="237">Madan </option>
+
+                                            <option value="238">Mohanganj </option>
+
+                                            <option value="239">Netrakona-S </option>
+
+                                            <option value="240">Purbadhala </option>
+
+                                            <option value="241">Khaliajuri </option>
+
+                                            <option value="242">Baliakandi </option>
+
+                                            <option value="243">Goalandaghat </option>
+
+                                            <option value="244">Pangsha </option>
+
+                                            <option value="245">Kalukhali </option>
+
+                                            <option value="246">Rajbari Sadar </option>
+
+                                            <option value="247">Shariatpur Sadar -Palong</option>
+
+                                            <option value="248">Damudya </option>
+
+                                            <option value="249">Naria </option>
+
+                                            <option value="250">Jajira </option>
+
+                                            <option value="251">Bhedarganj </option>
+
+                                            <option value="252">Gosairhat </option>
+
+                                            <option value="253">Jhenaigati </option>
+
+                                            <option value="254">Nakla </option>
+
+                                            <option value="255">Nalitabari </option>
+
+                                            <option value="256">Sherpur Sadar </option>
+
+                                            <option value="257">Sreebardi </option>
+
+                                            <option value="258">Tangail Sadar </option>
+
+                                            <option value="259">Sakhipur </option>
+
+                                            <option value="260">Basail </option>
+
+                                            <option value="261">Madhupur </option>
+
+                                            <option value="262">Ghatail </option>
+
+                                            <option value="263">Kalihati </option>
+
+                                            <option value="264">Nagarpur </option>
+
+                                            <option value="265">Mirzapur </option>
+
+                                            <option value="266">Gopalpur </option>
+
+                                            <option value="267">Delduar </option>
+
+                                            <option value="268">Bhuapur </option>
+
+                                            <option value="269">Dhanbari </option>
+
+                                            <option value="270">Bagerhat Sadar </option>
+
+                                            <option value="271">Chitalmari </option>
+
+                                            <option value="272">Fakirhat </option>
+
+                                            <option value="273">Kachua </option>
+
+                                            <option value="274">Mollahat </option>
+
+                                            <option value="275">Mongla </option>
+
+                                            <option value="276">Morrelganj </option>
+
+                                            <option value="277">Rampal </option>
+
+                                            <option value="278">Sarankhola </option>
+
+                                            <option value="279">Damurhuda </option>
+
+                                            <option value="280">Chuadanga-S </option>
+
+                                            <option value="281">Jibannagar </option>
+
+                                            <option value="282">Alamdanga </option>
+
+                                            <option value="283">Abhaynagar </option>
+
+                                            <option value="284">Keshabpur </option>
+
+                                            <option value="285">Bagherpara </option>
+
+                                            <option value="286">Jessore Sadar </option>
+
+                                            <option value="287">Chaugachha </option>
+
+                                            <option value="288">Manirampur </option>
+
+                                            <option value="289">Jhikargachha </option>
+
+                                            <option value="290">Sharsha </option>
+
+                                            <option value="291">Jhenaidah Sadar </option>
+
+                                            <option value="292">Maheshpur </option>
+
+                                            <option value="293">Kaliganj </option>
+
+                                            <option value="294">Kotchandpur </option>
+
+                                            <option value="295">Shailkupa </option>
+
+                                            <option value="296">Harinakunda </option>
+
+                                            <option value="297">Terokhada </option>
+
+                                            <option value="298">Batiaghata </option>
+
+                                            <option value="299">Dacope </option>
+
+                                            <option value="300">Dumuria </option>
+
+                                            <option value="301">Dighalia </option>
+
+                                            <option value="302">Koyra </option>
+
+                                            <option value="303">Paikgachha </option>
+
+                                            <option value="304">Phultala </option>
+
+                                            <option value="305">Rupsa </option>
+
+                                            <option value="306">Kushtia Sadar</option>
+
+                                            <option value="307">Kumarkhali</option>
+
+                                            <option value="308">Daulatpur</option>
+
+                                            <option value="309">Mirpur</option>
+
+                                            <option value="310">Bheramara</option>
+
+                                            <option value="311">Khoksa</option>
+
+                                            <option value="312">Magura Sadar </option>
+
+                                            <option value="313">Mohammadpur </option>
+
+                                            <option value="314">Shalikha </option>
+
+                                            <option value="315">Sreepur </option>
+
+                                            <option value="316">angni </option>
+
+                                            <option value="317">Mujib Nagar </option>
+
+                                            <option value="318">Meherpur-S </option>
+
+                                            <option value="319">Narail-S </option>
+
+                                            <option value="320">Lohagara </option>
+
+                                            <option value="321">Kalia </option>
+
+                                            <option value="322">Satkhira Sadar </option>
+
+                                            <option value="323">Assasuni </option>
+
+                                            <option value="324">Debhata </option>
+
+                                            <option value="325">Tala </option>
+
+                                            <option value="326">Kalaroa </option>
+
+                                            <option value="327">Kaliganj </option>
+
+                                            <option value="328">Shyamnagar </option>
+
+                                            <option value="329">Adamdighi</option>
+
+                                            <option value="330">Bogra Sadar</option>
+
+                                            <option value="331">Sherpur</option>
+
+                                            <option value="332">Dhunat</option>
+
+                                            <option value="333">Dhupchanchia</option>
+
+                                            <option value="334">Gabtali</option>
+
+                                            <option value="335">Kahaloo</option>
+
+                                            <option value="336">Nandigram</option>
+
+                                            <option value="337">Sahajanpur</option>
+
+                                            <option value="338">Sariakandi</option>
+
+                                            <option value="339">Shibganj</option>
+
+                                            <option value="340">Sonatala</option>
+
+                                            <option value="341">Joypurhat S</option>
+
+                                            <option value="342">Akkelpur</option>
+
+                                            <option value="343">Kalai</option>
+
+                                            <option value="344">Khetlal</option>
+
+                                            <option value="345">Panchbibi</option>
+
+                                            <option value="346">Naogaon Sadar </option>
+
+                                            <option value="347">Mohadevpur </option>
+
+                                            <option value="348">Manda </option>
+
+                                            <option value="349">Niamatpur </option>
+
+                                            <option value="350">Atrai </option>
+
+                                            <option value="351">Raninagar </option>
+
+                                            <option value="352">Patnitala </option>
+
+                                            <option value="353">Dhamoirhat </option>
+
+                                            <option value="354">Sapahar </option>
+
+                                            <option value="355">Porsha </option>
+
+                                            <option value="356">Badalgachhi </option>
+
+                                            <option value="357">Natore Sadar </option>
+
+                                            <option value="358">Baraigram </option>
+
+                                            <option value="359">Bagatipara </option>
+
+                                            <option value="360">Lalpur </option>
+
+                                            <option value="361">Natore Sadar </option>
+
+                                            <option value="362">Baraigram </option>
+
+                                            <option value="363">Bholahat </option>
+
+                                            <option value="364">Gomastapur </option>
+
+                                            <option value="365">Nachole </option>
+
+                                            <option value="366">Nawabganj Sadar </option>
+
+                                            <option value="367">Shibganj </option>
+
+                                            <option value="368">Atgharia </option>
+
+                                            <option value="369">Bera </option>
+
+                                            <option value="370">Bhangura </option>
+
+                                            <option value="371">Chatmohar </option>
+
+                                            <option value="372">Faridpur </option>
+
+                                            <option value="373">Ishwardi </option>
+
+                                            <option value="374">Pabna Sadar </option>
+
+                                            <option value="375">Santhia </option>
+
+                                            <option value="376">Sujanagar </option>
+
+                                            <option value="377">Bagha</option>
+
+                                            <option value="378">Bagmara</option>
+
+                                            <option value="379">Charghat</option>
+
+                                            <option value="380">Durgapur</option>
+
+                                            <option value="381">Godagari</option>
+
+                                            <option value="382">Mohanpur</option>
+
+                                            <option value="383">Paba</option>
+
+                                            <option value="384">Puthia</option>
+
+                                            <option value="385">Tanore</option>
+
+                                            <option value="386">Sirajganj Sadar </option>
+
+                                            <option value="387">Belkuchi </option>
+
+                                            <option value="388">Chauhali </option>
+
+                                            <option value="389">Kamarkhanda </option>
+
+                                            <option value="390">Kazipur </option>
+
+                                            <option value="391">Raiganj </option>
+
+                                            <option value="392">Shahjadpur </option>
+
+                                            <option value="393">Tarash </option>
+
+                                            <option value="394">Ullahpara </option>
+
+                                            <option value="395">Birampur </option>
+
+                                            <option value="396">Birganj</option>
+
+                                            <option value="397">Biral </option>
+
+                                            <option value="398">Bochaganj </option>
+
+                                            <option value="399">Chirirbandar </option>
+
+                                            <option value="400">Phulbari </option>
+
+                                            <option value="401">Ghoraghat </option>
+
+                                            <option value="402">Hakimpur </option>
+
+                                            <option value="403">Kaharole </option>
+
+                                            <option value="404">Khansama </option>
+
+                                            <option value="405">Dinajpur Sadar </option>
+
+                                            <option value="406">Nawabganj</option>
+
+                                            <option value="407">Parbatipur </option>
+
+                                            <option value="408">Fulchhari</option>
+
+                                            <option value="409">Gaibandha sadar</option>
+
+                                            <option value="410">Gobindaganj</option>
+
+                                            <option value="411">Palashbari</option>
+
+                                            <option value="412">Sadullapur</option>
+
+                                            <option value="413">Saghata</option>
+
+                                            <option value="414">Sundarganj</option>
+
+                                            <option value="415">Kurigram Sadar</option>
+
+                                            <option value="416">Nageshwari</option>
+
+                                            <option value="417">Bhurungamari</option>
+
+                                            <option value="418">Phulbari</option>
+
+                                            <option value="419">Rajarhat</option>
+
+                                            <option value="420">Ulipur</option>
+
+                                            <option value="421">Chilmari</option>
+
+                                            <option value="422">Rowmari</option>
+
+                                            <option value="423">Char Rajibpur</option>
+
+                                            <option value="424">Lalmanirhat Sadar</option>
+
+                                            <option value="425">Aditmari</option>
+
+                                            <option value="426">Kaliganj</option>
+
+                                            <option value="427">Hatibandha</option>
+
+                                            <option value="428">Patgram</option>
+
+                                            <option value="429">Nilphamari Sadar</option>
+
+                                            <option value="430">Saidpur</option>
+
+                                            <option value="431">Jaldhaka</option>
+
+                                            <option value="432">Kishoreganj</option>
+
+                                            <option value="433">Domar</option>
+
+                                            <option value="434">Dimla</option>
+
+                                            <option value="435">Panchagarh Sadar</option>
+
+                                            <option value="436">Debiganj</option>
+
+                                            <option value="437">Boda</option>
+
+                                            <option value="438">Atwari</option>
+
+                                            <option value="439">Tetulia</option>
+
+                                            <option value="440">Badarganj</option>
+
+                                            <option value="441">Mithapukur</option>
+
+                                            <option value="442">Gangachara</option>
+
+                                            <option value="443">Kaunia</option>
+
+                                            <option value="444">Rangpur Sadar</option>
+
+                                            <option value="445">Pirgachha</option>
+
+                                            <option value="446">Pirganj</option>
+
+                                            <option value="447">Taraganj</option>
+
+                                            <option value="448">Thakurgaon Sadar </option>
+
+                                            <option value="449">Pirganj </option>
+
+                                            <option value="450">Baliadangi </option>
+
+                                            <option value="451">Haripur </option>
+
+                                            <option value="452">Ranisankail </option>
+
+                                            <option value="453">Ajmiriganj</option>
+
+                                            <option value="454">Baniachang</option>
+
+                                            <option value="455">Bahubal</option>
+
+                                            <option value="456">Chunarughat</option>
+
+                                            <option value="457">Habiganj Sadar</option>
+
+                                            <option value="458">Lakhai</option>
+
+                                            <option value="459">Madhabpur</option>
+
+                                            <option value="460">Nabiganj</option>
+
+                                            <option value="461">Shaistagonj </option>
+
+                                            <option value="462">Moulvibazar Sadar</option>
+
+                                            <option value="463">Barlekha</option>
+
+                                            <option value="464">Juri</option>
+
+                                            <option value="465">Kamalganj</option>
+
+                                            <option value="466">Kulaura</option>
+
+                                            <option value="467">Rajnagar</option>
+
+                                            <option value="468">Sreemangal</option>
+
+                                            <option value="469">Bishwamvarpur</option>
+
+                                            <option value="470">Chhatak</option>
+
+                                            <option value="471">Derai</option>
+
+                                            <option value="472">Dharampasha</option>
+
+                                            <option value="473">Dowarabazar</option>
+
+                                            <option value="474">Jagannathpur</option>
+
+                                            <option value="475">Jamalganj</option>
+
+                                            <option value="476">Sulla</option>
+
+                                            <option value="477">Sunamganj Sadar</option>
+
+                                            <option value="478">Shanthiganj</option>
+
+                                            <option value="479">Tahirpur</option>
+
+                                            <option value="480">Sylhet Sadar</option>
+
+                                            <option value="481">Beanibazar</option>
+
+                                            <option value="482">Bishwanath</option>
+
+                                            <option value="483">Dakshin Surma </option>
+
+                                            <option value="484">Balaganj</option>
+
+                                            <option value="485">Companiganj</option>
+
+                                            <option value="486">Fenchuganj</option>
+
+                                            <option value="487">Golapganj</option>
+
+                                            <option value="488">Gowainghat</option>
+
+                                            <option value="489">Jaintiapur</option>
+
+                                            <option value="490">Kanaighat</option>
+
+                                            <option value="491">Zakiganj</option>
+
+                                            <option value="492">Nobigonj</option>
+
+                                            <option value="493">Dhaka Metro</option>
+
+                                            <option value="494">Chittagong Metro</option>
+
+                                            <option value="495">Khulna Metro</option>
+
+                                            <option value="496">Adabor</option>
+
+                                            <option value="497">Badda</option>
+
+                                            <option value="498">Banani</option>
+
+                                            <option value="499">Bangshal</option>
+
+                                            <option value="500">Bimanbandar</option>
+
+                                            <option value="501">Cantonment</option>
+
+                                            <option value="502">ChalkBazar</option>
+
+                                            <option value="503">Dakhinkhan</option>
+
+                                            <option value="504">Ramna</option>
+
+                                            <option value="505">Motijheel </option>
+
+                                            <option value="506">Kotwali</option>
+
+                                            <option value="507">Dhanmondi </option>
+
+                                            <option value="508">Mohammadpur</option>
+
+                                            <option value="509">Sutrapur</option>
+
+                                            <option value="510">Tejgaon</option>
+
+                                            <option value="511">Gulshan</option>
+
+                                            <option value="512">Lalbagh</option>
+
+                                            <option value="513">Mirpur</option>
+
+                                            <option value="514">Pallabi</option>
+
+                                            <option value="515">Sabujbag</option>
+
+                                            <option value="516">Demra</option>
+
+                                            <option value="517">Hazaribagh</option>
+
+                                            <option value="518">Shyampur</option>
+
+                                            <option value="519">Kafrul</option>
+
+                                            <option value="520">Kamringir Char</option>
+
+                                            <option value="521">Khilgaon </option>
+
+                                            <option value="522">Uttara </option>
+
+                                            <option value="523">Shah Ali</option>
+
+                                            <option value="524">Paltan </option>
+
+                                            <option value="525">Darus Salam</option>
+
+                                            <option value="526">Uttarkhan </option>
+
+                                            <option value="527">Kadamtoli </option>
+
+                                            <option value="528">Gendaria</option>
+
+                                            <option value="529">Tejgaon Industrial </option>
+
+                                            <option value="530">Turag </option>
+
+                                            <option value="531">Bhashantek </option>
+
+                                            <option value="532">Bhatara </option>
+
+                                            <option value="533">Jatrabari </option>
+
+                                            <option value="534">Rampura </option>
+
+                                            <option value="535">Rupnagar</option>
+
+                                            <option value="536">Sherebangla Nagar</option>
+
+                                            <option value="537">Shahjahanpur</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="row m5">
+                                    <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <label>Post Office <span class="relative"><span
+                                                    class="required-star">*</span></span></label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                        <input class="form-control input-style" type="text" value=""
+                                            name="postOfficePermanent">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="row m5">
+                                    <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <label>Post Code <span class="relative"><span
+                                                    class="required-star">*</span></span></label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                        <input class="form-control input-style" type="text" value=""
+                                            name="postCodePermanent">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row m5">
+                            <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                <label>Phone No <span class="relative"><span
+                                            class="required-star">*</span></span></label>
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                <input class="form-control input-style" type="text" value="" maxlength="11"
+                                    name="phoneNo" data-validate="validate(hiddenOrRequired)">
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+
+                        <div class="row m5">
+                            <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                <label>Email <span class="relative"><span class="required-star">*</span></span></label>
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                <input class="form-control input-style" type="text" value="" name="email">
+                            </div>
+                            <div class="clear"></div>
                         </div>
 
 
                 </div>
-                <div class="form-group">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2"
-                        placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                    </div>
-                    <div class="form-group col">
-                        <label for="inputEmail4">Phone Number</label>
-                        <input type="number" class="form-control" id="inputEmail4" placeholder="Email">
-                    </div>
-                </div>
 
-                <fieldset class="form-group">
-                    <div class="row">
-                        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-                        <div class="col-sm-10">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="gridRadios1">
-                                    Male
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                    value="option2">
-                                <label class="form-check-label " for="gridRadios2">
-                                    Female
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
+
+
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Upload CV</label>
                     <input type="file" class="form-control-file" id="exampleFormControlFile1">

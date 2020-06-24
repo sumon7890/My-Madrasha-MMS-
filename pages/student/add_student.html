@@ -204,7 +204,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/pages/student/reports.html" class="nav-link">
+                                    <a href="/pages/Attendance/reports.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Reports</p>
                                     </a>
@@ -342,7 +342,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Student List</h1>
+                            <h1>Add Student</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -355,95 +355,36 @@
             </section>
 
             <!-- Main content -->
-            <section class="content">
+            <section class="content justify-content-center">
                 <div class="container">
-                    <table cellpadding="1" cellspacing="1" class="table table-hover">
-                        <tr>
-                            <th>SL NO</th>
-                            <th>Name</th>
-                            <th>Class</th>
-                            <th>Roll</th>
-                            <th>Phon Number</th>
-                            <th>Address</th>
-                            <th>Department</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Aaron F. Hardin</td>
-                            <td>three</td>
-                            <td>0</td>
-                            <td>(531) 710-6462</td>
-                            <td>4412 Sodales Rd.</td>
-                            <td>Scince</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Sybill Q. West</td>
-                            <td>one</td>
-                            <td>5</td>
-                            <td>(276) 601-0329</td>
-                            <td>713-4107 Nec Avenue</td>
-                            <td>Sales and Marketing</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Nolan H. Woodard</td>
-                            <td>seven</td>
-                            <td>10</td>
-                            <td>(647) 987-9153</td>
-                            <td>P.O. Box 820, 7167 Duis Street</td>
-                            <td>Management</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Remedios Shepard</td>
-                            <td>nine</td>
-                            <td>15</td>
-                            <td>(998) 438-4634</td>
-                            <td>440-6391 Dolor. Av.</td>
-                            <td>Management</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Brian W. Roth</td>
-                            <td>six</td>
-                            <td>20</td>
-                            <td>(598) 138-7246</td>
-                            <td>P.O. Box 243, 259 Rhoncus. Road</td>
-                            <td>Research and Development</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Lareina Q. Richardson</td>
-                            <td>one</td>
-                            <td>25</td>
-                            <td>(729) 569-6048</td>
-                            <td>Ap #211-4828 Arcu. Street</td>
-                            <td>Management</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Gage O. Huffman</td>
-                            <td>ten</td>
-                            <td>30</td>
-                            <td>(395) 146-8574</td>
-                            <td>P.O. Box 186, 359 Nisl. Av.</td>
-                            <td>Legal Department</td>
-                        </tr>
-                    </table>
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-end">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                role="tab" aria-controls="pills-home" aria-selected="true">General Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                role="tab" aria-controls="pills-profile" aria-selected="false">Enrollment info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                role="tab" aria-controls="pills-contact" aria-selected="false">Address & Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-medical"
+                                role="tab" aria-controls="pills-medical" aria-selected="false">Medical</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">...</div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">...</div>
+                        <div class="tab-pane fade" id="pills-medical" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">...</div>
+                    </div>
                 </div><!-- /.container-fluid -->
             </section>
             <!-- /.content -->

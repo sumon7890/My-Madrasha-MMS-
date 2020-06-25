@@ -1,0 +1,16 @@
+.bd_wapper {
+    padding: 20px;
+    border: 5px solid currentColor;
+    margin: 0 auto;
+    background: gainsboro;
+}
+.btn {
+    display: block;
+}
+.foot{
+font-size: 26px;
+	font-family: 'Lacquer', sans-serif;;
+	text-align: center;
+	font-weight: 900;
+	}
+
